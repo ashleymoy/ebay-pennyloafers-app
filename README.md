@@ -36,3 +36,4 @@ This was my first coding project and I learned a lot, including the following:
 - How to log using logging module
 - Creating a README and LICENSE
 - Setting a function to execute on an interval
+- Using Git and Github
