@@ -1,13 +1,24 @@
 # sends email on a timed interval.
 from send_email import email
-import schedule, time, logging
+import schedule, time, logging, json
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 
-schedule.every().day.at("10:00").do(email)
+def email_timer():
+    schedule.every().day.at("10:00").do(email)
+    while True:
+      schedule.run_pending()
+      logging.debug('job scheduled..')
+      time.sleep(1) # wait one second
 
-logging.debug('job scheduled..')
+# lambda handler function
+def lambda_handler(event, context):
+    email_timer()
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Woohoooo!')
+    }
 
-while True:
-    schedule.run_pending()
-    time.sleep(1) # wait one second
+# call the function if this file is directly called
+#if __name__ == '__main__':
+#    email_timer()

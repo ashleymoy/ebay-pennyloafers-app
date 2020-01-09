@@ -3,7 +3,7 @@
 This email search is a Python 3 program that searches for Weejuns pennyloafers on eBay and emails the results to me.
 
 ## Prerequisites
-Non-built in modules used: smtplib, logging, schedule
+Non-built in modules used: smtplib, logging, schedule, requests
 
 ## Usage
 
