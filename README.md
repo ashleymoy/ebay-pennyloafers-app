@@ -8,11 +8,11 @@ Non-built in modules used: smtplib, logging, schedule, requests
 ## Usage
 
 Python 3
-This program can be used by executing the timer_email.py file in Terminal (or hosted on a web server).
+This program can be used by either executing the timer_email.py file in Terminal or on AWS Lambda by executing the lambda_handler() in send_email.py
 
 ** IMPORTANT! **
 Before executing, input API and email info into my_info.py.
-Also, update lines 15-17 in send_email.py with your email info.
+Also, update lines 43-44 in send_email.py with your email info.
 
 ## Author
 
@@ -29,9 +29,10 @@ I had the idea to make this program after wasting time searching on Ebay for the
 This was my first coding project and I learned a lot, including the following:
 
 - Working with RESTful APIs, reading documentation, parsing API responses, etc.
+- Using AWS services: Lambda, Cloudwatch Events, SES
 - Making multiple python files work with each other
-- How to send outgoing email from python
-- Working with .json files
+- How to send outgoing email using smtplib module
+- Working with json module
 - Using different modules
 - How to log using logging module
 - Creating a README and LICENSE
