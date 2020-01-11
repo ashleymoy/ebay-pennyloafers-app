@@ -2,3 +2,4 @@ __pycache__
 my_info.py
 virt
 package
+send_email_backup.py

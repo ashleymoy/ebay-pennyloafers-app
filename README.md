@@ -29,12 +29,12 @@ I had the idea to make this program after wasting time searching on Ebay for the
 This was my first coding project and I learned a lot, including the following:
 
 - Working with RESTful APIs, reading documentation, parsing API responses, etc.
-- Using AWS services: Lambda, Cloudwatch Events, SES
+- Using AWS services: Lambda, Cloudwatch Events, SES, IAM
 - Making multiple python files work with each other
 - How to send outgoing email using smtplib module
 - Working with json module
-- Using different modules
-- How to log using logging module
+- How to log/debug with logging module
 - Creating a README and LICENSE
 - Setting a function to execute on an interval
 - Using Git and Github
+- Crons
