@@ -16,7 +16,7 @@ def lambda_handler(event, context):
         if title not in results.keys():
             results[title] = viewItemURL
 
-    # create email body
+    # create email body as string (no txt file)
     emailBody = ""
     for i in results:
         emailBody += json.dumps(i) + "\n"
